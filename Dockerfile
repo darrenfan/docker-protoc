@@ -12,4 +12,4 @@ RUN go get -u github.com/golang/protobuf/protoc-gen-go
 RUN go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger
 RUN go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway
 
-WORKDIR /opt/protos%
+WORKDIR /opt/protos
