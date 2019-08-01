@@ -13,5 +13,6 @@ RUN go get -u github.com/micro/protoc-gen-micro
 RUN go get -u github.com/golang/protobuf/protoc-gen-go
 RUN go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger
 RUN go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway
+RUN go get -u github.com/pseudomuto/protoc-gen-doc/cmd/protoc-gen-doc
 
 WORKDIR /opt/protos
