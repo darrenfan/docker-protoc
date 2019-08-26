@@ -13,6 +13,6 @@ RUN go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger
 RUN go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway
 RUN go get -u github.com/mwitkow/go-proto-validators/protoc-gen-govalidators
 RUN go get -u github.com/pseudomuto/protoc-gen-doc/cmd/protoc-gen-doc
-RUN go get -u github.com/golang/mock/gomock && go install github.com/golang/mock/mockgen
+RUN go get golang.org/x/tools/go/packages && go get github.com/golang/mock/gomock && go install github.com/golang/mock/mockgen
 
 WORKDIR /opt/protos
